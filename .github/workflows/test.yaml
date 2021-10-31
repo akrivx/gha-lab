@@ -1,0 +1,13 @@
+name: test
+
+on:
+        push:
+                branches: [main]
+
+jobs:
+        build:
+                runs-on: ubunutu-latest
+
+                steps:
+                        - uses: actions/checkout@v2
+                        - run: python3 hello.py
